@@ -32,8 +32,11 @@ const jateDb = await openDB("jate", 1 );
 const tx = jateDb.transaction("jate", "readonly");
 const store = tx.objectStore("jate");
 const request = store.getAll();
+
 const result = await request;
 console.log("result.vaule", result);
 return result?.vaule;
 };
+
+
 initdb();
