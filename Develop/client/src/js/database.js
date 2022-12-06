@@ -20,7 +20,7 @@ export const putDb = async (content) => {
   const store = tx.objectStore("jate");
   const request = store.put({id: 1, value: content });
   const result = await request;
-  console.log("information saveed", result);
+  console.log("information saved", result);
   return result;
 };
 
@@ -32,7 +32,6 @@ const jateDb = await openDB("jate", 1 );
 const tx = jateDb.transaction("jate", "readonly");
 const store = tx.objectStore("jate");
 const request = store.getAll();
-
 const result = await request;
 console.log("result.vaule", result);
 return result?.vaule;
