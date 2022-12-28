@@ -20,7 +20,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'webpack Plugin',
+        title: 'Text Editor',
         favicon: './favico'
       }),
       new InjectManifest({
@@ -31,7 +31,7 @@ module.exports = () => {
         name: 'Just Another Text Editor',
         short_name: 'JATE',
         description: "Text editor ",
-        background_color:'#',
+        background_color:'#225ca3',
         theme_color: "#225ca3",
         start_url: "/",
         publicPath: "/",
